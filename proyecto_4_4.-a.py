@@ -1,4 +1,6 @@
+#ultima fecha registrada
 Fecha=["2021-07-09"]
+#datos de contagios de los ultimos 7 dias
 rango_etareo_m_0a4 =[21306,21611,21920,22179,22423,22596,22853]
 rango_etareo_m_5a9 =[23087,23431,23786,24093,24350,24577,24858]
 rango_etareo_m_10a14=[29681,30147,30631,31041,31427,31732,32078]
@@ -36,6 +38,7 @@ rango_etareo_f_80o=[24492,24772,25093,25367,25635,25858,26115]
 contagios_total_M=[]
 contagios_total_F=[]
 p=[]
+#suma de contagios por sexo
 contagios_total_M.append(rango_etareo_m_0a4[6]+rango_etareo_m_5a9[6]+rango_etareo_m_10a14[6]+rango_etareo_m_15a19[6]+rango_etareo_m_20a24[6]+
                          rango_etareo_m_25a29[6]+rango_etareo_m_30a34[6]+rango_etareo_m_35a39[6]+rango_etareo_m_40a44[6]+rango_etareo_m_45a49[6]+
                          rango_etareo_m_50a54[6]+rango_etareo_m_55a59[6]+rango_etareo_m_60a64[6]+rango_etareo_m_65a69[6]+rango_etareo_m_70a74[6]+
@@ -44,7 +47,7 @@ contagios_total_F.append(rango_etareo_f_0a4[6]+rango_etareo_f_5a9[6]+rango_etare
                          rango_etareo_f_25a29[6]+rango_etareo_f_30a34[6]+rango_etareo_f_35a39[6]+rango_etareo_f_40a44[6]+rango_etareo_f_45a49[6]+
                          rango_etareo_f_50a54[6]+rango_etareo_f_55a59[6]+rango_etareo_f_60a64[6]+rango_etareo_f_65a69[6]+rango_etareo_f_70a74[6]+
                          rango_etareo_f_75a79[6]+rango_etareo_f_80o[6])
-
+#diferencia de contagios por sexo
 p=contagios_total_F[0]-contagios_total_M[0]
 
 import matplotlib.pyplot as plt
